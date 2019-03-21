@@ -1,0 +1,153 @@
+.gallery{
+	font-family: $rale;
+	font-weight: $rale100;
+	position: relative;
+	background: $bg-shadow;
+	height: auto;
+	background: url('../img/bg-gallery.png') no-repeat center center;
+	padding: 110px 0 130px 0;
+
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $bg-block;
+		opacity: .93;
+	}
+}
+
+.gallery__links{
+	margin: 74px 0 70px 0;
+
+	button{
+		border: none;
+		outline: none;
+		background: none;
+		cursor: pointer;
+		color: $white;
+		font-size: 16px;
+		border-bottom: 1px dashed $white;
+
+		&:hover{
+			color: $red;
+			text-decoration: none;
+			transition: all 1s;
+			border-bottom: none;
+		}
+	}
+
+	span{
+		color: $white;
+		padding: 1px 12px 0 12px;
+	}
+}
+
+.gallery__links_filter{
+	margin-bottom: 77px;
+}
+
+.gallery__filter_item{
+
+	a{
+		border: none;
+		outline: none;
+		color: $white;
+		font-size: 13px;
+		border: 1px solid rgba(0,0,0,0);
+		padding: 6px 12px 4px 12px;
+	}
+}
+
+.filter__link:hover{
+	border: 1px solid $red;
+	border-radius: 70px;
+	text-decoration: none;
+	transition: all 1s;
+	color: $red;
+}
+
+.gallery__delivery{
+	a{
+		color: $red;
+		margin-top: 85px;
+		border-bottom: 1px dotted $red;
+
+			&:hover{
+			text-decoration: none;
+			color: $red;
+		}
+	}
+}
+
+.gallery__mix{
+	position: relative;
+}
+
+.gallery__images_item{
+	cursor: pointer;
+	display: block;
+	width: 282px;
+	height: 282px;
+	margin-bottom: 5px;
+}
+
+.text__overlay{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+	p{
+		font-family: $barlow;
+		font-weight: $barlow700;
+		font-size: 19px;
+		color: $white;
+	}
+
+	a{
+		margin-top: 26px;
+		border: 1px solid $white;
+		font-family: $barlow;
+		font-weight: $barlow700;
+		font-size: 12px;
+		color: $white;
+		outline: none;
+		background: none;
+		padding: 10px 23px;
+		border-radius: 70px;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: $red;
+    opacity: .80;
+    overflow: hidden;
+    width: 282px;
+	height: 282px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.gallery__mix:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}

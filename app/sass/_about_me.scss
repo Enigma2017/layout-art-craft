@@ -1,0 +1,198 @@
+.about{
+	height: 800px;
+}
+
+.about__block_left{
+	position: relative;
+	color: $white;
+
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -50%;
+		right: 0;
+		bottom: -800px;
+		background: $bg-block;
+	}
+
+	img, ul, a{
+		position: absolute;
+	}
+
+	ul > li{
+		text-align: justify;
+		font-size: 16px;
+		font-family: $rale;
+		font-weight: $rale300;
+		padding-top: 20px; 
+	}
+
+	.about__left_text > ul{
+		width: 408px;
+		top: 96px;
+		left: 276px;
+
+		li > p{
+			font-family: $barlow;
+			font-weight: $barlow700;
+			font-size: 20px;
+			padding-bottom: 8px;
+		}
+	}
+
+	.about__left_img > img{
+		top: 132px;
+		left: 4%;
+	}
+
+	.about__left_mail{
+		top: 400px;
+		left: 11%;
+		font-size: 12px;
+		color: $white;
+		border-bottom: 1px solid $white;
+
+		&:hover{
+			color: $red;
+			text-decoration: none;
+			border-bottom: 1px solid $red;
+		} 
+	}
+
+	.about__left_img > ul{
+		top: 356px;
+		left: 0;
+
+		li{
+			padding: 0 16px 18px 15px;
+
+			a{
+				font-size: 18px;
+				font-family: $icon;
+				color: $white;
+
+				&:hover{
+					text-decoration: none;
+					color: $red;
+				}
+			}
+		}
+	}
+}
+
+.about__block_right{
+	color: $white;
+
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: -70%;
+		bottom: -800px;
+		background: url('../img/art.png') center center / cover;
+	}
+
+	.about__block > ul{
+		position: absolute;
+		top: 86px;
+		width: 310px;
+		right: 5%;
+
+		li > p{
+			font-family: $barlow;
+			font-weight: $barlow700;
+			font-size: 20px;
+			padding-bottom: 18px;
+			color: $grey;
+		}
+
+		li{
+			margin-left: -23px;
+		}
+
+		li:nth-child(2):before{
+			position: absolute;
+			font-family: $icon;
+			content:"\f1fc"; 
+			padding: 3px 7px;
+			font-size: 13px;
+			border-radius: 50%;
+			background: $red;
+			color: $white;
+			left: -73px;
+			top: 111px;
+		}
+
+		li:nth-child(3):before{
+			position: absolute;
+			font-family: $icon;
+			content:"\f004"; 
+			padding: 5px 7px 2px 7px;
+			font-size: 13px;
+			border-radius: 50%;
+			background: $red;
+			color: $white;
+			left: -73px;
+			top: 231px;
+		}
+
+		li:nth-child(4):before{
+			position: absolute;
+			font-family: $icon;
+			content:"\f005";
+			padding: 3px 7px;
+			font-size: 13px;
+			border-radius: 50%;
+			background: $red;
+			color: $white;
+			left: -73px;
+			top: 306px;
+		}
+
+		li:nth-child(5):before{
+			position: absolute;
+			font-family: $icon;
+			content:"\f075";
+			padding: 3px 7px;
+			font-size: 13px;
+			border-radius: 50%;
+			background: $red;
+			color: $white;
+			left: -73px;
+			top: 403px;
+		}
+
+		li:nth-child(6):before{
+			position: absolute;
+			font-family: $icon;
+			content:"\f0c2";
+			padding: 3px 7px;
+			font-size: 13px;
+			border-radius: 50%;
+			background: $red;
+			color: $white;
+			left: -73px;
+			top: 500px;
+		}
+	}
+
+	ul > li{
+		text-align: justify;
+		font-size: 15px;
+		font-family: $rale;
+		font-weight: 100;
+		padding-top: 30px; 
+	}
+
+	li > a{
+		color: $white;
+		border-bottom: 1px solid $white;
+
+		&:hover{
+			color: $red;
+			border-bottom: 1px solid $red;
+		}
+	}
+}

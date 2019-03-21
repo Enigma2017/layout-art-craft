@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:200,800|Marck+Script|Raleway:100,300&subset=cyrillic');
+$barlow: 'Barlow', sans-serif;;
+$barlow200: 200;
+$barlow700: 700;
+$mark: 'Marck Script', cursive; 
+$rale: 'Raleway', sans-serif;
+$rale100: 100;
+$rale300: 300;
+$bg-shadow: #313131;
+$bg-block: #242424;
+$font-grey: #b9b9b9;
+$font-text: #292929;
+$white: #fff;
+$red: #f86867;
+$grey: #7d7b7a;
+$icon: FontAwesome;
+$fb: #3763b5;
+
+body{
+	box-sizing: border-box;
+	position: relative;
+	min-width: 320px;
+	margin: auto !important;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.container{
+	width: 1170px;
+	margin: auto;
+	padding: 0;
+}
+
+ul, li{
+	box-sizing: border-box;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, div, header, section, button, span, p, a{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	font-family: $barlow;
+	font-weight: $barlow700;
+	color: $grey;
+	font-size: 65px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 4px;
+}

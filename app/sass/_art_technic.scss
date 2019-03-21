@@ -1,0 +1,114 @@
+.art__technic{
+	position: relative;
+	height: 1288px;
+	background: $bg-block;
+	padding-top: 118px;
+
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: -10%;
+		background: url('../img/bg-fog.png') no-repeat center bottom;
+
+	}
+}
+
+.art__technic_menu{
+	padding: 88px 0 38px 0;
+}
+
+.menu{
+	color: $white;
+	font-family: $rale;
+	font-weight: $rale300;
+	font-size: 13px;
+	margin: 0 28px;
+	cursor: pointer;
+	border: 1px solid rgba(0,0,0,0);
+}
+
+.active-menu, .menu:hover {
+    color: $red;
+    border-bottom: 1px solid $red;
+    transition: 1s all;
+}
+
+.art__technic_box{
+	position: relative;
+	padding-top: 20px;
+	margin-top: 30px;
+	width: 100%;
+}
+
+.art__technic_slider{
+	width: 877px;
+	margin: auto;
+	display: none;
+
+	.technic__img{
+		width: 877px;
+		height: auto;
+	}
+}
+
+.technic__text{
+	padding-top: 55px;
+
+	span{
+		font-family: $barlow;
+		font-weight: $barlow700;
+		font-size: 38px;
+		color: $red;
+		width: 330px;
+	}
+
+	.technic__slider_text{
+		height: 150px;
+		width: 547px;
+		color: $white;
+		font-size: 16px;
+		font-family: $rale;
+		font-weight: $rale300;
+		padding: 10px 0 31px 0;
+	}
+
+	a{
+		color: $red;
+		font-family: $rale;
+		font-weight: $rale100;
+		font-size: 14px;
+		border-bottom: 1px dashed $red;
+
+		&:hover{
+			text-decoration: none;
+			border-bottom: none;
+			color: $grey;
+		}
+	}
+}
+
+.prev-arrow, .next-arrow{
+	cursor: pointer;
+	position: absolute;
+	top: 27%;
+	padding: 16px;
+	transition: 0.6s ease;
+	user-select: none;
+	
+	span{
+		font-family: $icon;
+		color: $grey;
+		font-size: 90px;
+	}
+}
+
+.next-arrow{
+	right: 0;
+}
+
+.prev-arrow:hover, .next-arrow:hover{
+	color: $red;
+}

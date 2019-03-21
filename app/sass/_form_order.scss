@@ -1,0 +1,119 @@
+.form__order{
+	height: 1006px;
+	position: relative;
+	background: $red;
+	padding-top: 130px;
+
+	h2{
+		color: $white;
+	}
+
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: -15%;
+		background: url('../img/redbg-form.png') no-repeat center bottom;
+	}
+}
+
+.form__order_form{
+	background: url('../img/form-bg.png') no-repeat center top;
+	position: relative;
+	margin-top: 20px;
+	height: 818px;
+
+	& > div{
+		position: absolute;
+		width: 605px;
+		font-size: 22px;
+	}
+
+	div:nth-child(1){
+		left: 24%;
+		top: 12%;
+	}
+
+	div:nth-child(2){
+		left: 24%;
+		top: 30%;
+	}
+
+	div:nth-child(3){
+		left: 24%;
+		top: 36%;
+	}
+
+	div:nth-child(4){
+		left: 24%;
+		top: 45%;
+	}
+
+	div:nth-child(5){
+		left: 24%;
+		top: 72%;
+	}
+
+	div:nth-child(6){
+		left: 24%;
+		top: 83%;
+	}
+}
+
+.form__light_font{
+	font-family: $mark;
+	color: $font-text;
+	font-weight: 400;
+	padding: 0 5px;
+	letter-spacing: 3px;
+}
+
+.form__dark_font{
+	@extend .form__light_font;
+	font-weight: bold;
+}
+
+input.input{
+	outline: none;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	background: #efefef;
+	width: 224px;
+	border-bottom: 1px solid #818181;
+}
+
+input.letter__input{
+	@extend input.input;
+	width: 445px;
+}
+
+input.letter__input_second{
+	@extend input.input;
+	width: 590px;
+}
+
+.form__button{
+	font-family: $barlow;
+	font-weight: $barlow700;
+	background: #efefef;
+	font-weight: bold; 
+	font-size: 20px;
+	color: $red;
+	outline: none;
+	border: none;
+	letter-spacing: 3px;
+}
+
+.form__icon{
+	font-family: $icon;
+	font-size: 20px;
+	color: $red;
+	padding-left: 7px; 
+}
+
+div.form__subscribe{
+	margin: -36px 0 0 170px;
+}
